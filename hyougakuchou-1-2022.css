@@ -1,0 +1,157 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+}
+
+#container {
+  width: 780px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  display: flex;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 0px;
+}
+
+#results-container {
+  margin-left: auto;
+  color: green;
+}
+
+#section-instruction-box {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-bottom: 15px;
+  border-bottom: solid;
+}
+
+#section-instruction-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}
+
+#section-instruction-text {
+  font-size: 25px;
+}
+
+.question-box {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-bottom: 20px;
+}
+
+.question-number-audio-and-mark-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.question-number {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.check-mark-box {
+  display: flex;
+  justify-content: center;
+}
+
+.check-mark-icon {
+  width: 75%;
+}
+
+#choices-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.choice-image {
+  display: block;
+  width: 100%;
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+}
+
+.audio-icon {
+  display: flex;
+  width: 75%;
+  cursor: pointer;
+  align-self: center;
+  margin-bottom: 5px;
+}
+
+#submit-button {
+  align-self: center;
+  width: 125px;
+  height: 45px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+:root {
+  --radio-border-color: black;
+  --radio-checked-color: blue;
+}
+
+input[type="radio"] {
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  padding: 0;
+  border: 2px solid var(--radio-border-color);
+  border-radius: 50%;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  align-self: center;
+  cursor: pointer;
+}
+
+input[type="radio"]:not(:disabled):checked {
+  border-color: var(--radio-checked-color);
+  background-color: var(--radio-checked-color);
+  background-clip: content-box;
+  padding: 2px;
+}
